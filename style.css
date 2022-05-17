@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.right {
+    right: 0;
+}
+.left{
+    left: 0;
+}
+.centered{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #780000;
+}
+.centered h1{
+    color: #780000;
+}
+.centered img{
+    height: 520px;
+    
+}
+.buy-btn1{
+    top: 100%;
+    right: 25%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fdf0d5;
+    padding: 12px 15px;
+    background-color: #780000;
+    position: absolute;
+    cursor: pointer;
+}
+.buy-btn1:hover{
+    background-color: #045885;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1% 0.5%;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #045885;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #045885;
+    display: block;
+    margin: auto;
+    transition: all 0.75s; 
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.about{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.about img{
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+}
+h1{
+    color: #045885;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+}
+h1::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #045885;
+    display: block;
+    margin: auto;
+    transition: all 0.75s; 
+}
+h1:hover::after{
+    width: 45%;
+}
+p{
+    color: #780000;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px;
+}
+.about ul{
+    color: #780000;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.read-more-btn{
+    right: 45%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fdf0d5;
+    padding: 12px 15px;
+    background-color: #780000;
+    position: absolute;
+    cursor: pointer;
+}
+.read-more-btn:hover{
+    background-color: #045885;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.speakers{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.row1{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+.row2{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+.column img{
+    width: 70%;
+    border: 10px solid #780000;
+}
+.column img:hover{
+    border: 10px solid #045885;
+    background-color: #045885;
+    transition: 0.3s;
+    border-radius: 15px;
+    transform: scale(1.2);
+}
+.column h2{
+    color: #045885;
+}
+.column h3{
+    color:#780000;
+}
+.schedule{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(5,5,5,0.6),rgba(5,5,5,0.7)),url(images/schedules.jpg);
+    background-repeat: no-repeat;
+}
+.plan{
+    color: #fdf0d5;
+    text-align: left;
+    padding: 50px;
+}
+.schedule h1{
+    color: #fdf0d5;
+    text-align: center;
+    padding-top: 30px;
+}
+.schedule h1::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fdf0d5;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.schedule h1:hover::after {
+    width: 45%;
+}
+
+.sponsor-row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sponsors{
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+.sponsor-column img{
+    width: 80%;
+}
+.sponsor-column img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+.ticket{
+    padding: 20px;
+}
+.video{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.price-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    color: #780000
+}
+.buy-btn{
+    top: 25%;
+    right: 25%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fdf0d5;
+    font-size: 25px;
+    padding: 20px 90px;
+    background-color: #780000;
+    position: relative;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #045885;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.gallery-row{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.gallery-column img{
+    width: 90%;
+    padding-left: 30px;
+}
+.gallery-column img:hover {
+   transform: scale(1.2);
+   transition: all 0.5s;
+}
+.see-more-btn {
+    top: 75%;
+    right: -46%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fdf0d5;
+    padding: 12px 15px;
+    background-color: #780000;
+    position: relative;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background-color: #045885;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.gallery{
+    padding: 20px;
+}
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #780000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #780000;
+    font-size: 15px;
+
+}
+label{
+    color: #780000;
+    font-size:20px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #780000;
+    color:#fdf0d5;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    left: 40%;
+    position: relative;
+    font-size: 15px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #045885;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.container {
+    border-radius: 5px;
+    border-style: #780000 solid 5px;
+    margin-top: 50px;
+    margin-right: 80px;
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    right: 0;
+}
+.location{
+    height: 90%;
+    width: 400px;
+    padding: 20px;
+    margin-top: 70px;
+}
+.footer{
+    margin-top: 10%;
+    background-color: #780000;
+    color: #fdf0d5;
+    font-size:12px;
+    text-align:center;
+    padding: 25px;
+    white-space: 20px;
+}
+.address{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 100px;
+    margin-top: 50px;
+    background-color: #780000;
+    color: #fdf0d5;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+.address:hover{
+    transform:scale(1.2);
+    transition:all 0.5s;
+    background-color: #045885;
+}
+
+
